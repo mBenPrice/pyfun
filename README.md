@@ -11,6 +11,10 @@ Enter Amazon product URLs that you are interested in.  Currently, it checks one 
 By default, it will track the lowest new item price with shipping on the New Items page.
 If supplied a URL to used listings, it will track Amazon Warehous Deal inventory.  
 When a noteworthy change is made, an email notification is sent.  A price reduction of 5 cents is not noteworthy.
+
+To Do List
+* With used listing, offer to watch new prices also.
+* When Amazon says, "Add to cart to see product details," go to main page and grab the price from there.
 Phrase-based Password
 =====
 My first script which takes a phrase and a number then generates a secure password.
