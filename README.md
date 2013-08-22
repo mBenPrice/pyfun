@@ -3,7 +3,8 @@ pyfun
 This repo was created to hold various Python scripts I'm working on after a friend said he wanted to contribute.
 As of the beginning of August, I'm somewhat new to writing in Python, so feel free to offer suggestions on my
 style if you feel it is lacking.  Also, please note that I don't really expect anybody else to use these so they
-may have customizations specific to me which you could easily change.
+may have customizations specific to me which you could easily change.  
+For reference, I primarily use Python 2.7.
 Amazon Watch
 =====
 Enter Amazon product URLs that you are interested in.  Currently, it checks one product every 2-3 minutes.  
@@ -20,7 +21,7 @@ specify a route and a time to start polling.
 The display_flow.py script will show a graph of travel times if you get the right modules installed.
 
 To Do List
-* Add scheduling functionality to take input such as: ''6-9 mon-fri''
+* Add scheduling functionality to take input such as: '6-9 mon-fri'
 * Possibly add an end time, as a stepping stone to the above functionality.
 * Potentially reverse a route to work around 1:30 p.m. or offer an afternoon return route if a morning 6-9 a.m. route is scheduled.
 * Somehow smooth data points in the graph so it isn't so jumpy.
