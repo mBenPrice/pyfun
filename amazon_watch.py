@@ -112,10 +112,10 @@ def get_info():
             if len(watch_list) == 0:
                 URL1 = "http://www.amazon.com/gp/offer-listing/B00752R4U0/ref=dp_olp_used?ie=UTF8&condition=used"
                 URL2 = "http://www.amazon.com/gp/offer-listing/B000ZK5UT6/ref=dp_olp_new?ie=UTF8&condition=new"
-                URL3 = "http://www.amazon.com/gp/offer-listing/B00752R4U0/ref=dp_olp_new?ie=UTF8&condition=new"
+                #URL3 = "http://www.amazon.com/gp/offer-listing/B00752R4U0/ref=dp_olp_new?ie=UTF8&condition=new"
                 watch_list.append(("", URL1))
                 watch_list.append(("", URL2))
-                watch_list.append(("", URL3))
+                #watch_list.append(("", URL3))
             break
         if answer.find("amazon") == -1:
             print "\nThat doesn't look like a valid URL\n\n"
