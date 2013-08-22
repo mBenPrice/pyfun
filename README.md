@@ -15,6 +15,7 @@ When a noteworthy change is made, an email notification is sent.  A price reduct
 To Do List
 * With used listing, offer to watch new prices also.
 * When Amazon says, "Add to cart to see product details," go to main page and grab the price from there.
+
 Phrase-based Password
 =====
 My first script which takes a phrase and a number then generates a secure password.
