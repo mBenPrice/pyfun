@@ -30,3 +30,4 @@ To Do List
 * Possibly add an end time, as a stepping stone to the above functionality.
 * Potentially reverse a route to work around 1:30 p.m. or offer an afternoon return route if a morning 6-9 a.m. route is scheduled.
 * Somehow smooth data points in the graph so it isn't so jumpy.
+* Best:  Notify is route is busier than usual.
