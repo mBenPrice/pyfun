@@ -29,4 +29,5 @@ To Do List
 * Add scheduling functionality to take input such as: '6-9 mon-fri'
 * Possibly add an end time, as a stepping stone to the above functionality.
 * Potentially reverse a route to work around 1:30 p.m. or offer an afternoon return route if a morning 6-9 a.m. route is scheduled.
-* Somehow smooth data points in the graph so it isn't so jumpy.
+* Somehow smooth data points in the graph so it isn't so jumpy (digital samping to analog).
+* Best:  Notify is route is busier than usual.
