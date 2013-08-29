@@ -19,6 +19,12 @@ To Do List
 Phrase-based Password
 =====
 My first script which takes a phrase and a number then generates a secure password.
+
+Random URLs
+=====
+The wifi at UIUC will slow downloads significantly unless your computer is also making http requests, so I gathered 
+the top websites into a list for this script to randomly load pages every five seconds.
+
 Traffic Flow
 =====
 Polls current traffic info between two points from Gmaps so that you can plan your commute accordingly.  The user may 
