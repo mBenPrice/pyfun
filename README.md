@@ -16,6 +16,17 @@ To Do List
 * With used listing, offer to watch new prices also.
 * When Amazon says, "Add to cart to see product details," go to main page and grab the price from there.
 
+Craigslist Watch
+=====
+Especially when we move into a new house, we'll want to be immediately notified of curb alerts and other free 
+furniture/stuff notifications.  This script, yet-to-be-written, will probably just take in your Craigslist city 
+followed by search terms you want to be notified about.  Of course, Gmail credentials will be neessary.
+
+Amazon Prime Video Watcher
+=====
+This is a script my wife requested which I plan to have her write.  It will take in Gmail credentials and URLs to 
+some shows we watch so we can be notified when a season of it changes from fee to free.
+
 Phrase-based Password
 =====
 My first script which takes a phrase and a number then generates a secure password.
