@@ -17,11 +17,13 @@ def grab_junk(URL, opener):
       print "\nReceived error:"
       print e
       sleep(240)
-
+      
    ## Grab relevant blocks
    content = page.read()
    soup = BeautifulSoup(content)
-   html_blocks = soup.findAll('div', attrs = {'class' : 'a-row a-spacing-medium olpOffer'})
+   html_blocks = soup.findAll('div', attrs = {'class' \
+                                    : 'a-row a-spacing-mini olpOffer'})
+
 
    sub_blocks = []
    ## Snatch relevant info out of blocks
@@ -31,20 +33,23 @@ def grab_junk(URL, opener):
          detail = block.find(alt="Amazon Warehouse Deals")
          if detail != None:
             ## Item Condition
-            temp1 = re.sub("\s+"," ",str(block.findAll('h3', attrs = {'class' : 'a-spacing-small olpCondition'})))
+            temp1 = re.sub("\s+"," ",str(block.findAll('h3', attrs = \
+                                    {'class' : 'a-spacing-small olpCondition'})))
             idx1 = temp1.find(">")
             endx1 = temp1.find("</")
             ## Item Description
             temp2 = re.sub("\s+"," ",str(block.findAll('noscript')))
-            idx2 = temp2.find("\">")
+            idx2 = temp2.find("comments\">") + 9
             endx2 = temp2.find(" </")
             sub_blocks.append(temp1[idx1+2:endx1] + "-" + temp2[idx2+2:endx2])
       return sorted(sub_blocks)
+   
       ## New Items
    else:
       for block in html_blocks:
          ## Item Cost
-         temp1 = re.sub("\s+"," ",str(block.findAll('span', attrs = {'class' : 'a-size-large a-color-price olpOfferPrice a-text-bold'})))
+         temp1 = re.sub("\s+"," ",str(block.findAll('span', attrs = \
+                        {'class' : 'a-size-large a-color-price olpOfferPrice a-text-bold'})))
          idx1 = temp1.find("$")
          endx1 = temp1.find("</")
          ## Shipping Cost
@@ -134,9 +139,11 @@ def get_info():
             idx1 = idx2
 
         if answer.find("used") == -1:   ## If the URL wasn't for a used item
-            URL = "http://www.amazon.com/gp/offer-listing/" + product + "/ref=dp_olp_new?ie=UTF8&condition=new"
+            URL = "http://www.amazon.com/gp/offer-listing/" + product \
+                              + "/ref=dp_olp_new?ie=UTF8&condition=new"
         else:
-            URL = "http://www.amazon.com/gp/offer-listing/" + product + "/ref=dp_olp_used?ie=UTF8&condition=used"
+            URL = "http://www.amazon.com/gp/offer-listing/" + product \
+                              + "/ref=dp_olp_used?ie=UTF8&condition=used"
             
         watch_list.append(("", URL))
         
@@ -158,7 +165,8 @@ def main():
       
     for idx, item in enumerate(watch_list):
         watch_list[idx] = (grab_junk(item[1], opener), item[1])
-        print (strftime("%H:%M -", localtime())), "Found", watch_list[idx][0], "at:\n", item[1], "\n"
+        print (strftime("%H:%M -", localtime())), \
+                       "Found", watch_list[idx][0], "at:\n", item[1], "\n"
         sleep(3)
    
     while True:
@@ -173,9 +181,11 @@ def main():
                         send_email(username, password, temp, item[0], item[1])
                 except ValueError:
                     send_email(username, password, temp, item[0], item[1])
-                print (strftime("%H:%M -", localtime())), "Changed from", item[0], "to", temp, "\n"
+                print (strftime("%H:%M -", localtime())), \
+                                     "Changed from", item[0], "to", temp, "\n"
             else:
-                print (strftime("%H:%M -", localtime())), "Still: ", item[0], "\n"
+                print (strftime("%H:%M -", localtime())), \
+                                     "Still: ", item[0], "\n"
                     
             watch_list[idx] = (temp, item[1])
             skew = 87
