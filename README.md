@@ -15,6 +15,7 @@ When a noteworthy change is made, an email notification is sent.  A price reduct
 To Do List
 * With used listing, offer to watch new prices also.
 * When Amazon says, "Add to cart to see product details," go to main page and grab the price from there.
+* Amazon product may have "clip coupon" text on main page and may only be visible when logged in.  Looking into this may be worth while.
 
 Craigslist Watch
 =====
