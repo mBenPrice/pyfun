@@ -5,6 +5,12 @@ As of the beginning of August, I'm somewhat new to writing in Python, so feel fr
 style if you feel it is lacking.  Also, please note that I don't really expect anybody else to use these so they
 may have customizations specific to me which you could easily change.  
 For reference, I primarily use Python 2.7.
+
+Raise.com Giftcard Watcher
+=====
+As defined by entries in dictionary, watches certain giftcards for good values on raise.com.  Currently
+only configured for TJ Maxx gift cards because my wife likes to shop there and I can save 20%+ by getting them this way.
+
 Amazon Watch
 =====
 Enter Amazon product URLs that you are interested in.  Currently, it checks one product every 2-3 minutes.  
